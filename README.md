@@ -32,3 +32,9 @@ Proyecto en etapa inicial de desarrollo.
 - `frontend/` — Aplicación web.
 - `backend/` — API REST.
 - `docs/` — Documentación del proyecto.
+
+## Contribución
+
+Antes de comenzar a trabajar en DevMatch, consulta nuestra guía:
+
+👉 [Guía de contribución](CONTRIBUTING.md)
