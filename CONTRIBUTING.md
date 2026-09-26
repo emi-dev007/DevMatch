@@ -300,7 +300,7 @@ Las estimaciones sirven para detectar tareas demasiado grandes.
 
 
 
-# 9. Antes de comenzar una tarea
+# 7. Antes de comenzar una tarea
 
 Antes de escribir código:
 
@@ -314,7 +314,7 @@ Antes de escribir código:
 
 ---
 
-# 10. Actualizar main
+# 8. Actualizar main
 
 Antes de crear una branch:
 
@@ -327,7 +327,7 @@ Esto reduce la posibilidad de comenzar una tarea sobre código desactualizado.
 
 ---
 
-# 11. Convención de branches
+# 9. Convención de branches
 
 Nunca desarrollamos directamente sobre:
 
@@ -362,7 +362,7 @@ El número de Issue ayuda a identificar rápidamente qué trabajo corresponde a 
 
 ---
 
-# 12. Tipos de branch
+# 10. Tipos de branch
 
 Utilizamos:
 
@@ -426,7 +426,7 @@ refactor/42-project-service
 ---
 
 
-# 14. Crear una branch
+# 11. Crear una branch
 
 Ejemplo:
 
@@ -446,7 +446,7 @@ La branch actual aparecerá marcada con `*`.
 
 ---
 
-# 15. Commits
+# 12. Commits
 
 Utilizamos una versión sencilla de Conventional Commits.
 
@@ -489,7 +489,7 @@ refactor: simplify project service
 
 
 
-# 17. Guardar cambios
+# 13. Guardar cambios
 
 Flujo habitual:
 
@@ -525,7 +525,7 @@ git push -u origin feature/18-project-card
 
 ---
 
-# 18. No subir información sensible
+# 14. No subir información sensible
 
 Nunca subir al repositorio:
 
@@ -567,7 +567,7 @@ PORT=
 
 ---
 
-# 19. Pull Requests
+# 15. Pull Requests
 
 Todo cambio a `main` debe pasar por Pull Request.
 
@@ -598,7 +598,7 @@ main
 ---
 
 
-# 21. Descripción del Pull Request
+# 16. Descripción del Pull Request
 
 El repositorio utiliza una plantilla de Pull Request.
 
@@ -633,7 +633,7 @@ Closes #XX
 
 ---
 
-# 22. Vincular PR con Issue
+# 17. Vincular PR con Issue
 
 Todo Pull Request debe estar relacionado con su Issue.
 
@@ -669,7 +669,7 @@ Issue #18 cerrada
 
 ---
 
-# 26. Request Changes
+# 18. Request Changes
 
 Si existe un problema que debería resolverse antes del merge:
 
@@ -693,7 +693,7 @@ No se crea otro PR.
 
 ---
 
-# 28. Merge
+# 19. Merge
 
 Cuando el Pull Request:
 
@@ -715,7 +715,7 @@ Esto mantiene `main` con un historial más limpio.
 
 ---
 
-# 29. Después del merge
+# 20. Después del merge
 
 Después de integrar el PR:
 
@@ -737,7 +737,7 @@ git branch -d feature/18-project-card
 
 ---
 
-# 52. Definition of Ready
+# 21. Definition of Ready
 
 Una Issue está `Ready` cuando:
 
@@ -750,7 +750,7 @@ Una Issue está `Ready` cuando:
 
 ---
 
-# 53. Definition of Done
+# 22. Definition of Done
 
 Una tarea está `Done` cuando:
 
@@ -778,7 +778,7 @@ Cuando incorporemos CI y testing automatizado también serán obligatorios:
 ---
 
 
-# 55. Flujo completo de ejemplo
+# 23. Flujo completo de ejemplo
 
 Issue:
 
