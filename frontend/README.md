@@ -15,7 +15,7 @@ Este módulo contiene la interfaz de usuario de DevMatch, orientada a permitir l
 
 1. **Asegura la versión de Node:**
    * Utiliza la versión definida en el `.nvmrc` del proyecto.
-   ``bash
+   ```bash
    nvm install(solo si no la tienes)
    nvm use
 
@@ -25,5 +25,5 @@ Este módulo contiene la interfaz de usuario de DevMatch, orientada a permitir l
    npm install
 
 3. **Levantar el entorno de desarrollo**
-    ``bash
+    ```bash
     npm run dev

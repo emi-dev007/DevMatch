@@ -14,7 +14,7 @@ Este módulo contiene la API REST de DevMatch, responsable de las reglas de nego
 
 1. **Asegura la versión de Node:**
    * Revisa el archivo `.nvmrc` en la raíz para usar la versión exacta de Node acordada por el equipo.
-   ``bash
+   ```bash
    nvm install(si no la tienes descargada)
    nvm use
 
@@ -25,12 +25,12 @@ Este módulo contiene la API REST de DevMatch, responsable de las reglas de nego
 
 3. **Variables de Entorno**
     Copia el archivo env de ejemplo 
-    ``bash
+    ```bash
     cp .env.example .env
 
 4. **Levantar Base de Datos**
     * Antes de interactuar con la base de datos, levanta el contenedor de PostgreSQL
-    ``bash
+    ```bash
     docker compose up -d
     **Base de Datos (Prisma)**
     * Una vez activada la base, ejecuta los siguientes comandos para generar el cliente, aplicar las migraciones y semillar el catalogo de Skills
@@ -40,7 +40,7 @@ Este módulo contiene la API REST de DevMatch, responsable de las reglas de nego
     npx prisma db seed
 
 5. **Levantar el Servidor**
-    ``bash
+    ```bash
     npm run dev
 
 **Principios de Desarrollo**
