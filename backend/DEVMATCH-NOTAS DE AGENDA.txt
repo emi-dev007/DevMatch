@@ -1,0 +1,408 @@
+==================================================
+Visión de trabajo
+==================================================
+-Mejor ramas cortas por funcionalidad
+
+visión del producto → requisitos → atributos de calidad → metodología de trabajo → arquitectura → estándares de desarrollo 
+→ estrategia de testing → CI/CD → observabilidad → seguridad → métricas → mejora continua.
+==================================================
+primeros pasos
+==================================================
+
+1. Visión del producto
+2. Alcance del MVP
+3. Actores y casos de uso
+4. Modelo inicial del dominio
+5. Arquitectura inicial
+1. Visión del producto
+2. Alcance del MVP
+3. Actores y casos de uso
+4. Modelo inicial del dominio
+5. Arquitectura inicial
+
+ya después jeje 
+
+6. Product Backlog
+7. Historias de usuario
+8. Criterios de aceptación
+9. Definition of Done
+10. Estrategia Git + CI
+11. Estrategia de testing
+12. Primer sprint
+==================================================
+Lo que considero el MVP
+==================================================
+1. Registro / login
+
+2. Perfil de usuario
+
+3. Skills del usuario
+
+4. Crear proyecto
+
+5. Skills requeridas por proyecto
+
+6. Explorar proyectos
+
+7. Filtrar por skills
+
+8. Postularse
+
+MUST HAVE
+─────────
+Usuarios
+Perfiles
+Skills
+Proyectos
+Búsqueda
+Postulación
+
+
+SHOULD HAVE
+───────────
+Aceptar/rechazar candidatos
+Editar proyectos
+Favoritos
+
+
+COULD HAVE
+──────────
+Matchmaking
+Recomendaciones
+Notificaciones
+GitHub integration
+==================================================
+Distribución de roles 
+==================================================
+Integrante	Rol principal			Responsabilidades
+David		Backend & Architecture Owner	API, modelo de dominio, base de datos, autenticación, arquitectura y decisiones técnicas
+Ximena		Product/UX & Frontend Owner	experiencia de usuario, diseño de pantallas, frontend, flujo del producto y priorización funcional
+Emiliano	Quality/DevOps & Integration Owner	estrategia de pruebas, CI/CD, Docker, calidad, integraciones y apoyo full-stack
+
+             David    Ximena    Emiliano
+
+Git            ✓        ✓          ✓
+JS/TS          ✓        ✓          ✓
+HTTP           ✓        ✓          ✓
+SQL            ✓        ✓          ✓
+React          ✓✓       ✓✓✓        ✓✓
+Node           ✓✓✓      ✓          ✓✓
+Testing        ✓✓       ✓✓         ✓✓✓
+==================================================
+David — Backend & Architecture
+==================================================
+Usuarios
+Perfiles
+Skills
+Proyectos
+Aplicaciones
+Matchmaking
+Autenticación
+Base de datos
+API REST
+
+Lidera decisiones como:
+POST /projects
+GET /projects
+GET /projects/{id}
+POST /projects/{id}/applications
+GET /users/{id}
+
+==================================================
+Ximena — Product, UX y Frontend
+==================================================
+Registro
+Login
+Perfil
+Editar skills
+Explorar proyectos
+Filtros
+Detalle de proyecto
+Crear proyecto
+Postularse
+Ver candidatos
+Matchmaking
+
+==================================================
+Emiliano — Quality, DevOps e Integration
+==================================================
+Tests unitarios
+Tests de integración
+Linting
+CI
+Docker
+Cobertura
+GitHub Actions
+Entornos
+Build
+Deploy
+==================================================
+Reparto de responsabilidades
+==================================================
+Área		Principal	Backup
+Backend		David		Emiliano
+Frontend	Ximena		David
+DevOps		Emiliano	David
+UX		Ximena		Emiliano
+Testing		Emiliano	Todos
+Base de	 	David		Emiliano
+Datos 
+Product  	Ximena		Todos
+Backlog
+Matchmaking	David		Emiliano
+Code Review	Todos		Todos
+
+David desarrolla
+    ↓
+Ximena revisa
+
+Ximena desarrolla
+    ↓
+Emiliano revisa
+
+Emiliano desarrolla
+    ↓
+David revisa
+==================================================
+Stack
+==================================================
+Lenguaje común
+──────────────
+TypeScript
+
+
+Frontend
+────────
+React
+Vite
+CSS
+
+
+Backend
+───────
+Node.js
+Express
+
+
+Base de datos
+─────────────
+PostgreSQL
+Prisma
+
+
+Versionado
+──────────
+Git + GitHub
+
+Después
+───────
+Vitest
+React Testing Library
+Playwright
+GitHub Actions
+Docker
+Zod
+React Hook Form
+TanStack Query
+Tailwind
+==================================================
+TECNOLOGIAS A APRENDER
+==================================================
+-JavaScript básico
+variables
+const / let
+functions
+arrays
+objects
+map
+filter
+find
+async / await
+Promises
+modules
+destructuring
+spread operator
+TypeScript
+string
+number
+boolean
+arrays
+interfaces
+types
+optional properties
+function parameters
+function return types
+HTTP
+GET
+POST
+PUT
+PATCH
+DELETE
+
+request
+response
+
+headers
+body
+JSON
+200
+201
+400
+401
+403
+404
+500
+
+David
+Profundiza en:
+Node.js
+Express
+PostgreSQL
+Prisma
+REST
+arquitectura backend
+
+Ximena
+Profundiza en:
+React
+HTML
+CSS
+Figma
+UX
+formularios
+responsive design
+
+Emiliano
+Profundiza en:
+testing
+Git
+integración frontend/backend
+automatización
+Node + React básico
+==================================================
+Stack mínimo de la primera etapa
+==================================================
+Para empezar, instalaría únicamente:
+Git
+Node.js
+VS Code
+PostgreSQL
+
+Y utilizaría:
+TypeScript
+React
+Vite
+Express
+Prisma
+PostgreSQL
+Nada más.
+==================================================
+Etapa 1 — Prototipo frontend
+==================================================
+Ximena lidera.
+React
+Vite
+CSS
+
+Creamos:
+Navbar
+
+ProjectCard
+
+ProjectList
+
+ProjectDetail
+
+Profile
+
+CreateProject
+
+Cn datos simulados
+==================================================
+Etapa 2 — Backend básico
+==================================================
+David lidera.
+Node
+Express
+TypeScript
+
+Creamos:
+GET /health
+
+GET /projects
+
+GET /projects/:id
+
+POST /projects
+
+Inicialmente sin base de datos si hace falta.
+Ximena y Emiliano participan.
+==================================================
+Etapa 3 — Base de datos
+==================================================
+PostgreSQL
+Prisma
+
+Creamos:
+User
+Skill
+Project
+Application
+
+Prisma tiene actualmente guías específicas para comenzar un proyecto TypeScript conectado a PostgreSQL, por lo que es una combinación razonable para reducir configuración inicial.
+
+==================================================
+Etapa 4 — Primer vertical slice real
+==================================================
+Navegador
+               │
+               ▼
+          React Form
+               │
+               │ POST /projects
+               ▼
+            Express
+               │
+               ▼
+             Prisma
+               │
+               ▼
+          PostgreSQL
+
+El usuario crea:
+“Busco desarrollador React para aplicación móvil.”
+
+Actualiza la página.
+Y el proyecto continúa ahí porque está en la base de datos.
+Eso será un momento muy importante para ustedes.
+Solo entonces añadimos testing
+Primero algo sencillísimo.
+Por ejemplo:
+calculateMatch(
+  ["React", "Java"],
+  ["React"]
+)
+
+debe devolver:
+100
+
+Introducimos pruebas precisamente cuando ya existe lógica digna de proteger.
+Después:
+Vitest
+
+tiene una ventaja interesante porque podemos usarlo con TypeScript tanto para frontend como para cierta lógica de backend.
+Otro concepto menos que aprender.
+Después CI/CD
+Cuando ya sepan ejecutar:
+npm test
+npm run build
+
+localmente, entonces Emiliano configura:
+GitHub Actions
+
+Pull Request
+    │
+    ├── npm test
+    └── npm run build
+
+Así GitHub Actions deja de ser magia.
