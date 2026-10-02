@@ -33,8 +33,12 @@ Proyecto en etapa inicial de desarrollo.
 - `backend/` — API REST.
 - `docs/` — Documentación del proyecto.
 
-## Contribución
+## Gestión del proyecto
 
-Antes de comenzar a trabajar en DevMatch, consulta nuestra guía:
+Utilizamos GitHub Projects para organizar nuestras tareas,
+planificar los sprints y dar seguimiento al desarrollo.
 
-👉 [Guía de contribución](CONTRIBUTING.md)
+[Ver tablero de DevMatch](PEGA_AQUI_LA_URL_DEL_PROJECT)
+
+Antes de comenzar una tarea, consulta nuestra
+[guía de contribución](CONTRIBUTING.md).
