@@ -1,18 +1,26 @@
 ## ¿Qué cambia este PR?
 
-Describe brevemente los cambios realizados.
+Describe brevemente qué implementaste.
 
-## ¿Por qué?
+## Issue relacionada
 
-Explica qué problema o tarea resuelve.
+Closes #
+
+## Cambios realizados
+
+- 
+- 
+- 
 
 ## ¿Cómo probarlo?
 
-Indica los pasos necesarios para verificar los cambios.
+1.
+2.
+3.
 
 ## Checklist
 
-- [ ] El proyecto ejecuta correctamente.
-- [ ] Revisé mis propios cambios.
-- [ ] No incluí archivos innecesarios.
-- [ ] El cambio cumple con la tarea asignada.
+- [ ] Cumple los criterios de aceptación
+- [ ] Probé los cambios localmente
+- [ ] Revisé mis propios cambios
+- [ ] No incluí archivos sensibles

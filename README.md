@@ -32,3 +32,13 @@ Proyecto en etapa inicial de desarrollo.
 - `frontend/` — Aplicación web.
 - `backend/` — API REST.
 - `docs/` — Documentación del proyecto.
+
+## Gestión del proyecto
+
+Utilizamos GitHub Projects para organizar nuestras tareas,
+planificar los sprints y dar seguimiento al desarrollo.
+
+[Ver tablero de DevMatch](PEGA_AQUI_LA_URL_DEL_PROJECT)
+
+Antes de comenzar una tarea, consulta nuestra
+[guía de contribución](CONTRIBUTING.md).
