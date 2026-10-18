@@ -1,22 +1,17 @@
 import express from 'express';
-import type {Request, Response} from 'express';
+import authRoutes from './modules/auth/auth.routes.js';
 
-//Inicializa la aplicacion Express
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
-//MIddleware para que express comprenda JSON
+//middleware para poder leer JSON 
 app.use(express.json());
 
-//Primer ENDPOINT
-app.get('/health', (req: Request, res: Response) =>{
-    res.json({
-        status: 'ok',
-        message: 'DevMatch API is running'
-    });
+//Rutas de autenticacion
+//creamos el endpoint del contrato: POST /api/auth/register
+app.use('./api/auth', authRoutes);
+
+app.listen(PORT, () => {
+    console.log(`Servidor backend corriendo en http://localhost:${PORT}`);
 });
 
-//Levantar el server
-app.listen(PORT, () =>{
-    console.log(`[Backend] Servidor escuchando en http://localhost:${PORT}`);
-});
