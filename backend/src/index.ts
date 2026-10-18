@@ -9,7 +9,7 @@ app.use(express.json());
 
 //Rutas de autenticacion
 //creamos el endpoint del contrato: POST /api/auth/register
-app.use('./api/auth', authRoutes);
+app.use('/api/auth', authRoutes);
 
 app.listen(PORT, () => {
     console.log(`Servidor backend corriendo en http://localhost:${PORT}`);
